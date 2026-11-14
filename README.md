@@ -1,6 +1,6 @@
 # Motaz Hoda – Resume
 
-My developer resume, written for the **Resumes** lesson in The Odin Project's [Getting Hired](https://www.theodinproject.com/paths/full-stack-javascript/courses/getting-hired) course.
+My developer resume, written for the **Resumes** lesson in The Odin Project's [Getting Hired](https://www.theodinproject.com/lessons/node-path-getting-hired-building-your-resume) course.
 
 - `resume.md` – the content in plain Markdown (easy to edit and to paste into job sites)
 - `resume.html` – the designed version that prints to **exactly one US Letter page**
