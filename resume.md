@@ -15,7 +15,7 @@ Self-taught full-stack JavaScript developer (The Odin Project) who builds comple
 - Implemented session auth with Passport and bcrypt, sessions stored in PostgreSQL, plus one-click guest login
 - Wrote a Faker seed script that generates users, follows, posts, likes and comments for demos
 
-**Messaging App** – real-time-style chat · React, Vite, Express, PostgreSQL, Prisma, JWT · [PLACEHOLDER: live URL] · github.com/motazhoda17/odin-messaging-app
+**Messaging App** – chat app · React, Vite, Express, PostgreSQL, Prisma, JWT · [PLACEHOLDER: live URL] · github.com/motazhoda17/odin-messaging-app
 
 - Built a REST API and React client for direct messages, group chats, online status and editable profiles
 - Secured every route with JSON Web Tokens and checked membership so users can only read their own chats
@@ -33,6 +33,7 @@ Self-taught full-stack JavaScript developer (The Odin Project) who builds comple
 **Front end:** React, React Router, Vite, Webpack, responsive design
 **Back end:** Node.js, Express, REST APIs, PostgreSQL, Prisma ORM, Passport, JWT, EJS
 **Tools:** Git, GitHub, npm, Jest, Chrome DevTools
+**Spoken languages:** [PLACEHOLDER: your 4 languages + level, e.g. English (fluent)]
 
 ## Experience
 
@@ -54,7 +55,3 @@ Self-taught full-stack JavaScript developer (The Odin Project) who builds comple
 
 **Full Stack JavaScript Path** – The Odin Project (self-directed, online) · [PLACEHOLDER: start year] – Present
 **High School Diploma** – [PLACEHOLDER: school name, city] · [PLACEHOLDER: year]
-
-## Languages
-
-[PLACEHOLDER: language 1 (level)], [PLACEHOLDER: language 2 (level)], [PLACEHOLDER: language 3 (level)], [PLACEHOLDER: language 4 (level)]
