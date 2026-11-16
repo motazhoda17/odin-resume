@@ -5,7 +5,7 @@ Evans, GA · (762) 989-2725 · motazhoda@gmail.com · [linkedin.com/in/motaz-hod
 
 ## Summary
 
-Full-stack JavaScript developer trained through The Odin Project, with data center infrastructure experience at Meta and 4+ years leading client-facing sales. Builds and deploys React, Node.js/Express and PostgreSQL apps with authentication, REST APIs and automated tests, and explains technical work clearly to clients and teammates.
+Full-stack JavaScript developer trained through The Odin Project, with data center infrastructure experience at Meta and 4+ years leading client-facing sales. Builds and deploys React, Node.js/Express and PostgreSQL apps with authentication, REST APIs and automated tests, uses AI-assisted development to ship faster, and explains technical work clearly to clients and teammates.
 
 ## Technical Skills
 
@@ -13,6 +13,7 @@ Full-stack JavaScript developer trained through The Odin Project, with data cent
 - **Front End:** React, React Router, Vite, Webpack, DOM manipulation, responsive design (Flexbox, Grid)
 - **Back End:** Node.js, Express, REST APIs, PostgreSQL, Prisma, JWT and session authentication (Passport, bcrypt)
 - **Tools & Testing:** Git, GitHub, GitHub Actions, Jest, Vitest, React Testing Library, Supertest, Playwright, Render, GitHub Pages
+- **AI-Assisted Development:** Claude, prompt-driven development, reviewing and testing AI-generated code
 - **Spoken Languages:** English, Hindi, Urdu; Arabic (reading)
 
 ## Projects
@@ -20,6 +21,7 @@ Full-stack JavaScript developer trained through The Odin Project, with data cent
 **Kestrel Goods – Full-Stack E-Commerce Store** · React, Express, PostgreSQL · [Live demo](https://kestrel-goods.onrender.com) · [Code](https://github.com/motazhoda17/fullstack-ecommerce-store)
 - Built a store with product search, filtering and pagination, a guest cart that merges into the user's account on login, customer order history, and an admin dashboard for products, orders and sales stats.
 - Wrote checkout as a single database transaction that decrements stock and rejects oversold items, so two buyers can't purchase the last unit.
+- Built with AI-assisted development; reviewed and tested all generated code and documented each technical decision and trade-off in a decision log (DECISIONS.md).
 - Secured accounts with bcrypt and JWTs in httpOnly cookies and enforced admin roles on the server; covered the app with 84 automated tests and deployed it on Render.
 
 **Odin-Book – Social Media App** · Node.js, Express, PostgreSQL, Prisma, Passport · [Code](https://github.com/motazhoda17/odin-book)
