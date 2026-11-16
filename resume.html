@@ -1,279 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Motaz Hoda – Resume</title>
-    <style>
-      /* ---------- Screen + print shared styles ---------- */
-      :root {
-        --text: #1b1f27;
-        --muted: #555d6b;
-        --accent: #1d4ed8;
-        --rule: #d5d9e2;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        background: #e9ecf2;
-        color: var(--text);
-        font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
-        font-size: 10pt;
-        line-height: 1.3;
-      }
-      /* The "paper": US Letter width with 0.5in margins. */
-      .page {
-        width: 8.5in;
-        min-height: 11in;
-        margin: 0.4in auto;
-        padding: 0.35in 0.5in;
-        background: #fff;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      header {
-        text-align: center;
-        margin-bottom: 0.1in;
-      }
-      h1 {
-        font-size: 22pt;
-        letter-spacing: 0.5px;
-        margin: 0;
-      }
-      .headline {
-        font-size: 11pt;
-        color: var(--accent);
-        font-weight: 600;
-        margin: 2pt 0 4pt;
-      }
-      .contact {
-        color: var(--muted);
-        font-size: 9pt;
-      }
-      .contact span + span::before {
-        content: " · ";
-      }
-      h2 {
-        font-size: 10.5pt;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        color: var(--accent);
-        border-bottom: 1px solid var(--rule);
-        padding-bottom: 2pt;
-        margin: 8pt 0 4pt;
-      }
-      p {
-        margin: 0;
-      }
-      .entry {
-        margin-bottom: 5pt;
-        break-inside: avoid;
-      }
-      .entry-head {
-        display: flex;
-        justify-content: space-between;
-        gap: 12pt;
-      }
-      .entry-head strong {
-        font-size: 10.5pt;
-      }
-      .meta {
-        color: var(--muted);
-        font-size: 9pt;
-        white-space: nowrap;
-      }
-      .stack {
-        color: var(--muted);
-        font-style: italic;
-        font-size: 9pt;
-      }
-      ul {
-        margin: 2pt 0 0;
-        padding-left: 14pt;
-      }
-      li {
-        margin: 1pt 0;
-      }
-      .skills p {
-        margin: 1pt 0;
-      }
-      /* Unfinished text is highlighted on screen so it's easy to spot. */
-      .ph {
-        background: #fff1b8;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motaz Hoda – Resume</title>
+  <style>
+    /* Letter-sized page; the page sets its own margins so print with Margins: None */
+    @page { size: Letter; margin: 0; }
 
-      /* ---------- Print: exactly one clean page ---------- */
-      @page {
-        size: letter;
-        margin: 0;
-      }
-      @media print {
-        body {
-          background: #fff;
-        }
-        .page {
-          margin: 0;
-          box-shadow: none;
-          width: auto;
-          min-height: auto;
-        }
-        /* Keep colors (the blue headings) when printing. */
-        * {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-      }
-      /* Small screens: let the paper shrink instead of scrolling sideways. */
-      @media screen and (max-width: 8.6in) {
-        .page {
-          width: auto;
-          min-height: 0;
-          margin: 0;
-          padding: 20px 16px;
-        }
-        .entry-head {
-          flex-direction: column;
-          gap: 0;
-        }
-        .meta {
-          white-space: normal;
-          overflow-wrap: anywhere;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="page">
-      <header>
-        <h1>Motaz Hoda</h1>
-        <p class="headline">Full-Stack JavaScript Developer</p>
-        <p class="contact">
-          <span>Augusta, GA</span>
-          <span class="ph">[PLACEHOLDER: phone]</span>
-          <span class="ph">[PLACEHOLDER: email]</span>
-          <span class="ph">[PLACEHOLDER: LinkedIn URL]</span>
-          <span><a href="https://github.com/motazhoda17">github.com/motazhoda17</a></span>
-          <span class="ph">[PLACEHOLDER: portfolio URL]</span>
-        </p>
-      </header>
+    :root { --ink: #1f2937; --accent: #1f4e79; --muted: #4b5563; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e5e7eb;
+      font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      font-size: 10pt;
+      line-height: 1.32;
+    }
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 24px auto;
+      padding: 0.42in 0.6in;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    }
+    header { text-align: center; }
+    h1 { margin: 0; color: var(--accent); font-size: 20pt; letter-spacing: 2px; }
+    .title { margin: 2px 0; font-size: 11pt; }
+    .contact { margin: 0 0 4px; color: var(--muted); font-size: 9.5pt; }
+    .contact span + span::before { content: " | "; color: var(--muted); }
+    a { color: #1d4ed8; }
+    h2 {
+      margin: 8px 0 4px;
+      padding-bottom: 1px;
+      border-bottom: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 10.5pt;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    p { margin: 0 0 2px; }
+    .row { display: flex; justify-content: space-between; gap: 12px; margin-top: 5px; }
+    .row .when { color: var(--muted); white-space: nowrap; }
+    .stack { color: var(--muted); font-style: italic; }
+    ul { margin: 1px 0 0; padding-left: 16px; }
+    li { margin-bottom: 1px; }
+    .skills p strong { font-weight: 700; }
 
-      <section>
-        <h2>Summary</h2>
-        <p>
-          Self-taught full-stack JavaScript developer (The Odin Project) who builds complete web apps: relational
-          data models, REST APIs with authentication, and responsive React or server-rendered front ends. Brings a
-          customer-facing background in luxury sales, automotive and hospitality, and current hands-on
-          infrastructure work in a Meta data center. Speaks four languages.
-        </p>
-      </section>
+    /* On paper: no grey background or shadow, page fills the sheet */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>MOTAZ HODA</h1>
+      <p class="title">Junior Full-Stack Software Engineer (JavaScript)</p>
+      <p class="contact">
+        <span>Evans, GA</span><span>(762) 989-2725</span><span><a href="mailto:motazhoda@gmail.com">motazhoda@gmail.com</a></span><span><a href="https://www.linkedin.com/in/motaz-hoda-9316a5430">linkedin.com/in/motaz-hoda-9316a5430</a></span><span><a href="https://github.com/motazhoda17">github.com/motazhoda17</a></span><span><a href="https://motazhoda17.github.io/odin-portfolio/">Portfolio</a></span>
+      </p>
+    </header>
 
-      <!-- Projects come first: for a career changer they are the strongest proof of skill. -->
-      <section>
-        <h2>Projects</h2>
+    <h2>Summary</h2>
+    <p>Full-stack JavaScript developer trained through The Odin Project, with data center infrastructure experience at Meta and 4+ years leading client-facing sales. Builds and deploys React, Node.js/Express and PostgreSQL apps with authentication, REST APIs and automated tests, and explains technical work clearly to clients and teammates.</p>
 
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong>Odin-Book</strong> – social network <span class="stack">· Node.js, Express, PostgreSQL, Prisma, Passport, EJS</span></p>
-            <p class="meta"><span class="ph">[PLACEHOLDER: live URL]</span> · <a href="https://github.com/motazhoda17/odin-book">GitHub</a></p>
-          </div>
-          <ul>
-            <li>Built a Facebook-style site with posts, likes, comments, profiles and a feed of posts from followed users</li>
-            <li>Modeled follow requests as a self-referencing many-to-many table with PENDING/ACCEPTED status</li>
-            <li>Implemented session auth with Passport and bcrypt, sessions stored in PostgreSQL, plus one-click guest login</li>
-            <li>Wrote a Faker seed script that generates users, follows, posts, likes and comments for demos</li>
-          </ul>
-        </div>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <p><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3, SQL</p>
+      <p><strong>Front End:</strong> React, React Router, Vite, Webpack, DOM manipulation, responsive design (Flexbox, Grid)</p>
+      <p><strong>Back End:</strong> Node.js, Express, REST APIs, PostgreSQL, Prisma, JWT and session authentication (Passport, bcrypt)</p>
+      <p><strong>Tools &amp; Testing:</strong> Git, GitHub, GitHub Actions, Jest, Vitest, React Testing Library, Supertest, Playwright, Render, GitHub Pages</p>
+      <p><strong>Spoken Languages:</strong> English, Hindi, Urdu; Arabic (reading)</p>
+    </div>
 
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong>Messaging App</strong> – chat app <span class="stack">· React, Vite, Express, PostgreSQL, Prisma, JWT</span></p>
-            <p class="meta"><span class="ph">[PLACEHOLDER: live URL]</span> · <a href="https://github.com/motazhoda17/odin-messaging-app">GitHub</a></p>
-          </div>
-          <ul>
-            <li>Built a REST API and React client for direct messages, group chats, online status and editable profiles</li>
-            <li>Secured every route with JSON Web Tokens and checked membership so users can only read their own chats</li>
-            <li>Kept conversations up to date by polling only for messages newer than the last one received</li>
-          </ul>
-        </div>
+    <h2>Projects</h2>
+    <div class="row"><span><strong>Kestrel Goods – Full-Stack E-Commerce Store</strong> | <span class="stack">React, Express, PostgreSQL</span></span><span><a href="https://kestrel-goods.onrender.com">Live demo</a> · <a href="https://github.com/motazhoda17/fullstack-ecommerce-store">Code</a></span></div>
+    <ul>
+      <li>Built a store with product search, filtering and pagination, a guest cart that merges into the user's account on login, customer order history, and an admin dashboard for products, orders and sales stats.</li>
+      <li>Wrote checkout as a single database transaction that decrements stock and rejects oversold items, so two buyers can't purchase the last unit.</li>
+      <li>Secured accounts with bcrypt and JWTs in httpOnly cookies and enforced admin roles on the server; covered the app with 84 automated tests and deployed it on Render.</li>
+    </ul>
+    <div class="row"><span><strong>Odin-Book – Social Media App</strong> | <span class="stack">Node.js, Express, PostgreSQL, Prisma, Passport</span></span><span><a href="https://github.com/motazhoda17/odin-book">Code</a></span></div>
+    <ul>
+      <li>Social network with sign-up, guest login, follow requests, posts, likes, comments, profiles and a personalized feed; sessions stored in PostgreSQL and demo data seeded with Faker.</li>
+    </ul>
+    <div class="row"><span><strong>Battleship</strong> | <span class="stack">JavaScript, Webpack, Jest (test-driven)</span></span><span><a href="https://motazhoda17.github.io/odin-battleship/">Live demo</a> · <a href="https://github.com/motazhoda17/odin-battleship">Code</a></span></div>
+    <ul>
+      <li>Browser game built test-first with 40 Jest tests; includes manual ship placement and a computer opponent that targets squares next to previous hits.</li>
+    </ul>
 
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong>Blog API</strong> – headless blog <span class="stack">· Express, Prisma, PostgreSQL, JWT, React</span></p>
-            <p class="meta"><a href="https://github.com/motazhoda17/odin-blog-api">GitHub</a></p>
-          </div>
-          <ul>
-            <li>Built one REST API consumed by two separate React front ends: a public reader site and an author dashboard</li>
-          </ul>
-        </div>
+    <h2>Experience</h2>
+    <div class="row"><span><strong>IT Cable Technician</strong> · Meta, Graniteville, SC</span><span class="when">Sep 2026 – Present</span></div>
+    <ul>
+      <li>Install, terminate and test fiber optic cabling (LC, MPO/MTP) supporting high-speed network infrastructure in Meta data centers.</li>
+      <li>Certify links with OTDR and optical power meters, troubleshoot signal loss and link failures, and keep cable records and network diagrams current.</li>
+      <li>Follow strict safety, ESD and change management procedures while coordinating with network engineers during build-outs and maintenance windows.</li>
+    </ul>
+    <div class="row"><span><strong>Technology Specialist</strong> · Jim Hudson Cadillac &amp; Lexus, Augusta, GA</span><span class="when">Nov 2025 – Aug 2026</span></div>
+    <ul>
+      <li>Delivered one-on-one technology orientations, translating complex vehicle software and connectivity systems into clear, simple explanations for new owners.</li>
+    </ul>
+    <div class="row"><span><strong>Sales Manager</strong> · Suit Factory, Augusta, GA</span><span class="when">Sep 2021 – Nov 2025</span></div>
+    <ul>
+      <li>Closed $2.2M in high-ticket sales over 4+ years through consultative, needs-based selling.</li>
+      <li>Led the sales floor, coaching team members on closing, objection handling and upselling, and managed the full client cycle from consultation to after-sale service.</li>
+    </ul>
 
-        <p>
-          <strong>More projects:</strong> Where's Waldo (photo-tagging game with server-side timing), Members Only
-          (Passport auth, roles), Shopping Cart (React Router), Battleship (test-driven with Jest) – see portfolio.
-        </p>
-      </section>
-
-      <section class="skills">
-        <h2>Technical Skills</h2>
-        <p><strong>Languages:</strong> JavaScript (ES6+), HTML, CSS, SQL</p>
-        <p><strong>Front end:</strong> React, React Router, Vite, Webpack, responsive design</p>
-        <p><strong>Back end:</strong> Node.js, Express, REST APIs, PostgreSQL, Prisma ORM, Passport, JWT, EJS</p>
-        <p><strong>Tools:</strong> Git, GitHub, npm, Jest, Chrome DevTools</p>
-        <p><strong>Spoken languages:</strong> <span class="ph">[PLACEHOLDER: your 4 languages + level, e.g. English (fluent)]</span></p>
-      </section>
-
-      <section>
-        <h2>Experience</h2>
-
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong>IT Cable Technician</strong> – Meta (data center), <span class="ph">[PLACEHOLDER: city, state]</span></p>
-            <p class="meta">Oct 2026 – Present</p>
-          </div>
-          <ul>
-            <li class="ph">[PLACEHOLDER: what you install, test or maintain – e.g. type of cabling/equipment]</li>
-            <li class="ph">[PLACEHOLDER: a result with a number – e.g. volume of work, accuracy, deadlines met]</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong>Technology Specialist</strong> – Jim Hudson Cadillac &amp; Lexus, Augusta, GA</p>
-            <p class="meta">Nov 2025 – Sep 2026</p>
-          </div>
-          <ul>
-            <li class="ph">[PLACEHOLDER: main responsibility – e.g. what technology you helped customers or staff with]</li>
-            <li class="ph">[PLACEHOLDER: an achievement with a number – e.g. customers helped, satisfaction score, sales supported]</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <p><strong class="ph">[PLACEHOLDER: job title]</strong> – <span class="ph">[PLACEHOLDER: company]</span> (luxury sales / automotive / hospitality)</p>
-            <p class="meta ph">[PLACEHOLDER: dates]</p>
-          </div>
-          <ul>
-            <li class="ph">[PLACEHOLDER: one or two bullets showing results, customer skills or leadership]</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <div class="entry-head">
-          <p><strong>Full Stack JavaScript Path</strong> – The Odin Project (self-directed, online)</p>
-          <p class="meta"><span class="ph">[PLACEHOLDER: start year]</span> – Present</p>
-        </div>
-        <div class="entry-head">
-          <p><strong>High School Diploma</strong> – <span class="ph">[PLACEHOLDER: school name, city]</span></p>
-          <p class="meta ph">[PLACEHOLDER: year]</p>
-        </div>
-      </section>
-
-    </main>
-  </body>
+    <h2>Education &amp; Training</h2>
+    <div class="row"><span><strong>Full Stack JavaScript Curriculum</strong> · The Odin Project (self-directed)</span><span class="when">2026</span></div>
+    <ul>
+      <li>Project-based program: JavaScript, React, Node.js, Express, PostgreSQL, testing and Git; 28 projects on GitHub.</li>
+    </ul>
+    <div class="row"><span><strong>High School Diploma</strong> · Lakeside High School, Evans, GA</span><span class="when">2021</span></div>
+  </main>
+</body>
 </html>
